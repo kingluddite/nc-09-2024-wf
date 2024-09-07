@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit a Book</title>
+</head>
+<body>
+    <header>
+        <h1>Submit a Book</h1>
+    </header>
+
+    <main>
+        <section>
+            <form action="/submit-book" method="post">
+                <fieldset>
+                    <legend>Book Information</legend>
+
+                    <label for="title">Book Title:</label>
+                    <input type="text" id="title" name="title" required><br><br>
+
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="author" required><br><br>
+
+                    <label for="genre">Genre:</label>
+                    <select id="genre" name="genre">
+                        <option value="fiction">Fiction</option>
+                        <option value="non-fiction">Non-Fiction</option>
+                        <option value="mystery">Mystery</option>
+                        <option value="science-fiction">Science Fiction</option>
+                        <option value="fantasy">Fantasy</option>
+                    </select><br><br>
+
+                    <label for="pub-date">Publication Date:</label>
+                    <input type="date" id="pub-date" name="publication_date"><br><br>
+
+                    <label for="description">Description:</label><br>
+                    <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+
+                    <label for="isbn">ISBN:</label>
+                    <input type="text" id="isbn" name="isbn" required><br><br>
+
+                    <label for="cover">Book Cover (URL):</label>
+                    <input type="url" id="cover" name="cover"><br><br>
+
+                    <label for="email">Your Email (for confirmation):</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                </fieldset>
+
+                <input type="submit" value="Submit Book">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Book Submission Platform</p>
+    </footer>
+</body>
+</html>
